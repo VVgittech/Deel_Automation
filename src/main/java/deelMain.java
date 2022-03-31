@@ -37,7 +37,6 @@ public class deelMain {
        WebElement loginbutton = driver.findElement(By.cssSelector("#root > div.MuiGrid-root.css-rfnosa > div.MuiGrid-root.login-container-box-shadow.login-form.css-16ypnmh > div.MuiGrid-root.MuiGrid-container.MuiGrid-item.css-lptq43 > div > div > form > div.MuiGrid-root.css-o48jmu > button"));
        loginbutton.click();
 
-
         /*
         WebElement allowcookies = driver.findElement(By.cssSelector("#CybotCookiebotDialogBodyButtonAccept"));
         allowcookies.click();
@@ -46,7 +45,6 @@ public class deelMain {
         dismisspopup.click();
 
          */
-
 
 
        //Creating a fixed rate contract
@@ -87,11 +85,6 @@ public class deelMain {
         WebElement dropcalendar = driver.findElement(By.cssSelector("#root > div:nth-child(2) > div:nth-child(4) > div > form > div.box.mb-10.undefined > div > div.deel-ui__calendar-input-container__input > div > div > div.deel-ui__calendar-input-container__input_dropdown-icon"));
         dropcalendar.click();
 
-        /*Select previousdate = new Select(driver.findElement(yesterday));
-        previousdate.selectByValue();
-
-         */
-
         //Select currency
         Select setCurrency = new Select(driver.findElement(By.cssSelector("#root > div:nth-child(2) > div:nth-child(4) > div > div:nth-child(3) > form > div.box.clearfix > div.deel-ui__stack.deel-ui__stack_vertical.deel-ui__stack_with-spacing > div.deel-ui__stack.deel-ui__stack_horizontal.deel-ui__stack_stretch.payment-set-controls > div > div > div")));
         setCurrency.selectByVisibleText("GBP - British Pound");
@@ -117,8 +110,6 @@ public class deelMain {
 
         WebElement finalcreate = driver.findElement(By.cssSelector("#root > div:nth-child(2) > div:nth-child(4) > div > div.flex.flex-dir-col.compliance-form > div:nth-child(5) > div > button.button.mt-7.submit-compliance.heap-create-contract-fixed-compliance-create.w-100"));
         finalcreate.click();
-
-
 
 
         driver.quit();
